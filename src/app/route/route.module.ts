@@ -7,22 +7,22 @@ import { SupplierComponent } from '../supplier/supplier.component';
 import { LoginComponent } from '../login/login.component';
 const routes: Routes = [
  {
-   path: 'retailer',
+   path: 'employee',
    component: RetailerComponent,
    pathMatch: 'full'
  },
  {
-   path: 'distributor',
+   path: 'project_lead',
    component: DistributorComponent,
    pathMatch: 'full'
  },
  {
-   path: 'manufacturer',
+   path: 'secretary',
    component: ManufactureComponent,
    pathMatch: 'full'
  },
  {
-   path: 'supplier',
+   path: 'chairman',
    component: SupplierComponent,
    pathMatch: 'full'
  },
