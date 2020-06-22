@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/nexttech-icon.png') }}">
+    <title>Team NEO-Techies</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107490980-1"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107490980-1');
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{{ url_for('static', filename='css/mdb.min.css') }}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static', filename='css/style.min.css') }}" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+        
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #8fbc54;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+        
+        .col-center {
+            margin: 0 auto;
+            float: none !important;
+        }
+        
+        .carousel {
+            margin: 50px auto;
+            padding: 0 70px;
+        }
+        
+        .carousel .item {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 290px;
+        }
+        
+        .carousel .item .img-box {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+        
+        .carousel .img-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+        
+        .carousel .testimonial {
+            padding: 30px 0 10px;
+        }
+        
+        .carousel .overview {
+            font-style: italic;
+        }
+        
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #7AA641;
+        }
+        
+        .carousel .carousel-control {
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            top: 50%;
+            background: none;
+        }
+        
+        .carousel-control i {
+            font-size: 68px;
+            line-height: 42px;
+            position: absolute;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        }
+        
+        .carousel .carousel-indicators {
+            bottom: -40px;
+        }
+        
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px 3px;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators li {
+            background: #999;
+            border-color: transparent;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        
+        .carousel-indicators li.active {
+            background: #555;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+        
+        @media (max-width: 740px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 1050px;
+            }
+        }
+        
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 700px;
+            }
+        }
+        
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+
+    <style type="text/css">
+        .write {
+            font-size: 22px;
+        }
+        
+        .containerx {
+            text-align: center;
+        }
+    </style>
+
+
+    <style>
+        header {
+            font-family: 'Roboto';
+        }
+    </style>
+    <style type="text/css">
+        .btn-round-lg {
+            border-radius: 22.5px;
+            font-family: 'Roboto';
+            font-size: 15px;
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="{{ url_for('index') }}">
+                    <button type="button" class="btn btn-default btn-round-lg"><strong>Team NEO-Techies</strong></button>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+
+
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+
+                        {% if session['logged_in'] or session['dealer_logged_in'] %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('userpage') }}" class="nav-link border border-light rounded">
+                                <i class="fa fa-user mr-2"></i>{{user}}
+                            </a>
+                        </li>&nbsp;&nbsp;
+                        <li class="nav-item">
+                            <a href="{{ url_for('logout') }}" class="nav-link border border-light rounded">
+                                <i class="fas fa-sign-out-alt"></i>Log Out
+                            </a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a href="{{ url_for('login') }}" class="nav-link border border-light rounded">
+                                <i class="fa fa-user mr-2"></i>Login
+                            </a>
+                        </li>&nbsp;&nbsp;
+                        <li class="nav-item">
+                            <a href="{{ url_for('register') }}" class="nav-link border border-light rounded">
+                                <i class="fa fa-user mr-2"></i>Sign Up
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Full Page Intro -->
+        <div class="view full-page-intro">
+
+            <!--Video source-->
+
+
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-blue-light d-flex justify-content-center align-items-center" id="myripple" style="background-image:url(https://i.imgur.com/MV97Xtc.jpg)">
+
+                <!-- Content -->
+                <div class="container">
+
+                    <!--Grid row-->
+                    <div class="row d-flex h-100 justify-content-center align-items-center wow fadeIn">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4 white-text text-center text-md-left">
+                            <br><br>
+                            <h1 class="display-6 font-weight-bold">Where Public Procurement meets Blockchain</h1>
+
+                            <hr class="hr-light">
+
+                            <p>
+                                <strong>The first blockchain-complete public procurement platform</strong> is now live!
+                            </p>
+
+                            <p class="mb-4 d-none d-md-block">
+                                The Ethereum-powered procurement platform is built to <strong>keep the middlemen out</strong>, to make sure <strong>the best bidder finds the best dealer</strong>, ensure that <strong>public data is truly public</strong>                                and <strong>common citizen's money isn't fiddled with</strong>. We are on our mission to free <strong>Europe</strong> of the ocean of corruption in public procurements.
+                            </p>
+                            <br>
+
+                            <a href="{{ url_for('demo') }}">
+                                <p class="text-white"><button type="button" class="btn btn-success btn-round-lg"><b>Request a Demo</b><i class="fa fa-desktop ml-2"></i></p></button>
+                            </a>
+
+
+
+                        </div>
+                        <!--Grid column-->
+
+
+
+                        <!--Grid column-->
+                        <div class="col-md-6 col-xl-5 mb-4">
+
+                            <style type="text/css">
+                                #content {
+                                    position: relative;
+                                }
+                                
+                                #content img {
+                                    position: relative;
+                                    top: -75%;
+                                    right: -75%;
+                                    max-height: auto;
+                                    max-width: auto;
+                                }
+                            </style>
+
+                            <style type="text/css">
+                                #contentx {
+                                    position: relative;
+                                }
+                                
+                                #contentx img {
+                                    position: relative;
+                                    top: 60%;
+                                    right: 20%;
+                                }
+                            </style>
+
+                            <!--decrease to move to the respective direction-->
+                            <div id="content">
+                                <img src="{{ url_for('static', filename='./img/boat.png') }}" alt="" class="img-fluid">
+                            </div>
+                            <div id="contentx">
+                                <img src="{{ url_for('static', filename='./img/minecraft.png') }}" alt="" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+
+            </div>
+            <!-- Mask & flexbox options-->
+
+        </div>
+        <!-- Full Page Intro -->
+
+
+    </header>
+
+
+    <!--Main layout-->
+    <main>
+        <div class="container">
+
+            <!--Section: Main info-->
+            <section class="mt-5 wow fadeIn">
+
+                <center>
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4">
+
+                            <img src="{{ url_for('static', filename='img/corruption.jpg') }}" class="img-fluid z-depth-1-half">
+
+                        </div>
+                        <div class="col-md-6 mb-4">
+
+                            <img src="{{ url_for('static', filename='img/solution.svg') }}" alt="problems" height="277" width="300" class="img-fluid z-depth-1-half" alt="">
+
+                        </div>
+                        <!--Grid column-->
+
+
+
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4">
+
+
+
+                            <!-- Main heading -->
+                            <h3 class="h3 mb-3">Traditional systems are at their worst</h3>
+                            <p>Procurement deals are ridden with corruption, delays and inefficiency.</p>
+
+
+                            <img src="{{ url_for('static', filename='img/problem.png') }}" alt="problems" height=auto width="600">
+                            <!-- Main heading -->
+
+                            <hr>
+
+                            <p>
+                                Bidding process is <strong>corrupted</strong> by middlemen,<br>
+                                <strong>Collusions</strong> are formed to reduce competition,<br> Papers are kept secret to damage <strong>transparency</strong>
+                            </p>
+
+                            <br>
+                            <p>
+                                Incidents such as the recent <strong>children deaths</strong><br> at BRD Hospital in Gorakhpur highlight <br>endemic <strong>failure </strong> of procurement management
+                            </p>
+
+
+
+
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-md-6 mb-4">
+
+                            <!-- Main heading -->
+                            <h3 class="h3 mb-3">e-Procurement systems are better</h3>
+                            <p>But only when the database is transparent and immutable.</p>
+
+                            <img src="{{ url_for('static', filename='img/problem2.png') }}" alt="problems">
+
+                        </div>
+
+                    </div>
+                    <!--Grid row-->
+
+                </center>
+
+            </section>
+            <!--Section: Main info-->
+
+
+            <hr class="my-5">
+
+            <!--Section: Main features & Quick Start-->
+            <section>
+
+                <h3 class="h3 text-center mb-5">Why Blockchain</h3>
+
+                <!--Grid row-->
+                <div class="row wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 px-4">
+
+                        <!--First row-->
+                        <div class="row">
+                            <div class="col-1 mr-3">
+                                <i class="fa fa-code fa-2x indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="feature-title">Solving Corruption</h5>
+                                <p class="grey-text">Corruption is a trust problem plagued by collusion.Using an immutable public ledger as a rock-bed for all transactional evidence forces transparency onto officials and contractors, exponentially speeding up audits by third
+                                    parties like journalists & government watchdog groups.</p>
+                            </div>
+                        </div>
+                        <!--/First row-->
+
+                        <div style="height:30px"></div>
+
+                        <!--Second row-->
+                        <div class="row">
+                            <div class="col-1 mr-3">
+                                <i class="fa fa-cloud fa-2x blue-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="feature-title">Solving Incentives</h5>
+                                <p class="grey-text">Bidders must be encouraged to bid in self-interest, but must not be allowed to form risk-reducing cartels. We address these using a reputation system where each bid proposal is weighted by the reputation points of the bidder.
+                                    This way we can incentivise quality compliance for long-term contracts.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Second row-->
+
+                        <div style="height:30px"></div>
+
+                        <!--Third row-->
+                        <div class="row">
+                            <div class="col-1 mr-3">
+                                <i class="fa fa-ioxhost fa-2x cyan-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="feature-title">Solving Enforcement</h5>
+                                <p class="grey-text">Using smart contracts, we can automate the monetary penalties and make enforcement of regulation instant and independent of the state. This also solves the problem of middlemen meddling into state affairs by lobbying or
+                                    organised crime, since now the smart contract holds the payment and will automatically release the funds once the tender is proved to be complete.</p>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12">
+
+                        <!--<p class="h5 text-center mb-4">Our system explained</p>-->
+
+
+                        <br><br> So, this public immutable ledger makes the concept of bidder collusion more prohibitive and enforces transparency into how bids are made to a tender making sure of the privacy; disincentivise negative behaviour like bid-rigging
+                        and forming cartels; using smart contracts, we can automate the monetary penalties and make enforcement of regulation instant and independent of the state.
+
+                    </div>
+                    <!--/Grid column-->
+
+                </div>
+                <!--/Grid row-->
+
+            </section>
+            <!--Section: Main features & Quick Start-->
+
+            <hr class="my-5">
+
+
+
+
+
+            <hr class="my-5">
+
+            <!--Section: Not enough-->
+            <section>
+
+                <h3 class="my-5 h3 text-center">A Problem-Solution fit</h3>
+
+                <!--First row-->
+                <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <!--First row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-times fa-2x red-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Bid Rigging</h6>
+                                <p class="grey-text"><br><br><br><br><br>
+                                </p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/First row-->
+
+                        <!--Second row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-times fa-2x red-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Centralized bid-evaluation process</h6>
+                                <p class="grey-text"><br><br><br><br>
+                                </p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Second row-->
+
+                        <!--Third row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-times fa-2x red-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Delayed Contract payouts</h6>
+                                <p class="grey-text"><br><br><br></p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+
+                        <!--Fourth row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-times fa-2x red-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Slow procurement process</h6>
+                                <p class="grey-text"><br><br><br></p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Fourth row-->
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-4 flex-center">
+                        <img src="{{ url_for('static', filename='./img/confused.png') }}" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+                    </div>
+                    <!--/Second column-->
+
+                    <!--Third column-->
+                    <div class="col-md-4 mt-2">
+                        <!--First row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Reputation System incentivises individual selfish behaviour over collusion</h6>
+                                <p class="grey-text"><br><br><br>
+                                </p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/First row-->
+
+                        <!--Second row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Automated and Transparent bid-evaluation</h6>
+                                <p class="grey-text"><br><br><br></p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Second row-->
+
+                        <!--Third row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Smart contract regulated payouts</h6>
+                                <p class="grey-text"><br><br><br>
+                                </p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+
+                        <!--Third row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="feature-title">Proven faster process</h6>
+                                <p class="grey-text"><br><br><br>
+                                </p>
+                                <div style="height:15px"></div>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+
+                    </div>
+                    <!--/Third column-->
+
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--Section: Not enough-->
+
+
+
+            <hr class="mb-5">
+
+            <!--Section: More-->
+            <section>
+
+                <h3 class="my-5 h3 text-center">Core features preserved, Integrity and Usability enhanced</h3>
+
+                <!--First row-->
+                <div class="row features-small mt-5 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-chrome fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2 pl-3">
+                                <h5 class="feature-title font-bold mb-1">Wide compatibility</h5>
+                                <p class="grey-text mt-2">With most popular browsers from Chrome, Firefox, Safari, Brave supporting MetaMask, compatibility isn't a hurdle any longer.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-level-up fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Massively scalable</h5>
+                                <p class="grey-text mt-2">With Ethereum as the global network for computation and transaction processing, there are no more servers overloading and failing.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Autonomous transactions</h5>
+                                <p class="grey-text mt-2">With smart contracts governing transactions, justice to tenders is embedded immutably into the code.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-desktop fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Essentials without clutter</h5>
+                                <p class="grey-text mt-2">With clearly indicative UI, tender opportunities are not slipped away from the deserving.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                </div>
+                <!--/First row-->
+
+                <!--Second row-->
+                <div class="row features-small mt-4 wow fadeIn">
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Immutability</h5>
+                                <p class="grey-text mt-2">A transaction / bid / bill once confirmed is embedded into the blockchain and goes deeper every unit of time.</p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-superpowers fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">User-friendly</h5>
+                                <p class="grey-text mt-2">Where there is transparency, there is clarity.
+                                </p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Decentralized</h5>
+                                <p class="grey-text mt-2">Government and public bodies are auditors of themselves.</p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-3 col-lg-6">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-file-code-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 mb-2">
+                                <h5 class="feature-title font-bold mb-1">Responsive</h5>
+                                <p class="grey-text mt-2">Coded using Bootstrap, which ensures the code is responsive across devices, and is well-presentable.</p>
+                            </div>
+                        </div>
+                        <!--/Grid row-->
+                    </div>
+                    <!--/Grid column-->
+
+                </div>
+                <!--/Second row-->
+
+            </section>
+
+
+
+
+
+
+
+            </section>
+        </div>
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+        <!-- Initializations -->
+        <script type="text/javascript">
+            // Animations initialization
+            new WOW().init();
+        </script>
+
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/test-oct-6.png') }}"></div>
+        <!-- =================== script =================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="{{ url_for('static', filename='lib/parallax.js-1.4.2/parallax.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.ripples.js') }}"></script>
+        <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js">
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.ripples-min.js') }}"></script>
+        <script>
+            $('#myripple').ripples({
+                resolution: 512,
+                dropRadius: 20,
+                perturbance: 0.04
+            });
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+
+        <!-- particles js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <!-- bootstrap 4.0.0-beta.2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- main js file -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                styleDefault();
+
+                $('#changestyle .dropdown-menu a').click(function() {
+                    var style = $(this).data('val');
+                    switch (style) {
+                        case 'default':
+                            styleDefault();
+                            break;
+                        case 'space':
+                            styleSpace();
+                            break;
+                        case 'snow':
+                            styleSnow();
+                            break;
+                        default:
+                            styleDefault();
+                    }
+                    $('#selstyle').text($(this).text());
+                });
+
+                /*-------------------------------
+                  terminal linux style
+                -------------------------------*/
+                var about_me_content_displayed = false;
+                var $lines = $('.command p');
+                $lines.hide();
+
+                var lineContents = [];
+                var output = [];
+
+                var terminal = function() {
+                    var skip = 0;
+                    typeLine = function(idx) {
+                        idx == null && (idx = 0);
+                        var element = $lines.eq(idx);
+                        var content = lineContents[idx];
+                        if (typeof content == "undefined") {
+                            $('.skip').hide();
+                            return;
+                        }
+                        var charIdx = 0;
+
+                        // console.log(idx);
+
+                        var typeChar = function() {
+                            var rand = Math.round(Math.random() * 150) + 20;
+
+                            setTimeout(function() {
+                                var char = content[charIdx++];
+                                element.append(char);
+                                if (typeof char !== "undefined")
+                                    typeChar();
+                                else {
+                                    element.append('<br/><span class="output">' + output[idx] + '</span>');
+                                    element.removeClass('active');
+                                    typeLine(++idx);
+                                }
+                            }, skip ? 0 : rand);
+                        }
+                        element.append('[ec2-user@ip-127-0-0-1 ~]$ ').addClass('active');
+                        typeChar();
+                    }
+
+                    $lines.each(function(i) {
+                        lineContents[i] = $(this).text();
+                        output[i] = $(this).next('span').html();
+                        $(this).text('').show();
+                    });
+                    typeLine();
+                }
+
+                $(window).scroll(function() {
+                    var hT = $('#terminal-start').offset().top,
+                        hH = $('#terminal-start').outerHeight(),
+                        wH = $(window).height(),
+                        wS = $(this).scrollTop() - 250;
+                    if (wS > (hT + hH - wH) && !about_me_content_displayed) {
+                        about_me_content_displayed = true;
+                        terminal();
+                    }
+                });
+                // end terminal style ------------------------------------
+
+
+                $('section').each(function() {
+                    $('.slider-navigation').prepend('<div class="tick"></div>');
+                });
+
+                $('.tick').on('click', function() {
+                    var tickIndex = $(this).index();
+                    $('body').scrollTop($(window).height() * tickIndex);
+                });
+
+                updatePos();
+
+            }); // end document ready
+
+
+            var isDragging = false;
+            var sliderTop, pointerPos, currentSection;
+
+            var bodyHeight = $('body').height();
+            var sliderHeight = $('.slider-navigation').height();
+            var elementHeight = $('section').height();
+            var sectionAmount = $('section').length;
+            var scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+
+            var waitForFinalEvent = (function() {
+                var timers = {};
+                return function(callback, ms, uniqueId) {
+                    if (!uniqueId) {
+                        uniqueId = "resize";
+                    }
+                    if (timers[uniqueId]) {
+                        clearTimeout(timers[uniqueId]);
+                    }
+                    timers[uniqueId] = setTimeout(callback, ms);
+                };
+            })();
+
+
+            function updatePos() {
+                currentSection = $(window).scrollTop() / elementHeight;
+                currentSectionNum = Math.ceil(currentSection + 0.01);
+                sliderTop = $(window).scrollTop() / scale;
+                $('.nav-pointer').css('top', sliderTop).text(currentSectionNum + '/8');
+            }
+
+            function sliderMove(e) {
+                $('body').scrollTop(parseInt(e) * scale);
+            }
+
+            $(window).scroll(function() {
+                if (!isDragging) {
+                    updatePos();
+                }
+            });
+
+
+            $(window).resize(function() {
+                waitForFinalEvent(function() {
+                    bodyHeight = $('body').height();
+                    sliderHeight = $('.slider-navigation').height();
+                    elementHeight = $('section').height();
+                    sectionAmount = $('section').length;
+                    scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+                    updatePos();
+                }, 500, "resizing");
+            });
+            $(".draggable").draggable({
+                axis: "y",
+                containment: "parent",
+                start: function() {
+                    isDragging = true;
+                    $('body').addClass('dragging');
+                },
+                drag: function() {
+                    pointerPos = $(this).css('top');
+                    sliderMove(pointerPos);
+                    updatePos();
+                },
+                stop: function() {
+                    isDragging = false;
+                    $('body').removeClass('dragging');
+                }
+            });
+        </script>
+
+        <script>
+            if (typeof web3 !== 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+            } else {
+                alert("Install MetaMask / other Web3 Injector to use this portal");
+                web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:5000/"));
+            }
+        </script>
+
+        <!--Footer-->
+        <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+            <!--Call to action-->
+
+            <!--/.Call to action-->
+
+
+            <!--Copyright-->
+
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
+
+        <div class="containerx">
+
+            <span class="write"></span>
+
+        </div>
+
+</body>
+
+</html>
