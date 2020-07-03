@@ -14,7 +14,7 @@ important and relevant **Project related information from of pool of data source
 - we need to make centralised monitoring system(All the data need to be seen easily by all members or the officers concerned)(Backend, Blockchain and Frontend)
 - We need to develop Feedback Mechanism to tell back the client that this is wrong you need to change it(Backend, Blockchain and AI)
 - we need to make a system that will show and store important data easily(Frontend and Blockchain)
-- The data provided by emails and other sources should be analysed and whcih data need to be stored and what not need to be determined(AI)
+- The data provided by emails and other sources should be analysed and which data need to be stored and what not need to be determined(AI)
 
 ## Links to read about Airport licensing
 [Link 1](https://www.aai.aero/en/content/aerodrome-licensing)
