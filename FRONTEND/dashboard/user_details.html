@@ -1,5 +1,5 @@
 <head><link rel="stylesheet" href="Path">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap1.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script></head>
 
@@ -8,6 +8,9 @@
       .img-container {
         text-align: center;
       }
+      .inputClass { 
+            pointer-events: none;  
+        } 
     </style>
   </head>
   <body>
@@ -15,23 +18,36 @@
       <img src="blankprofile.png" alt="MANISH MALHOTRA">
       <figcaption>Manager</figcaption>
       <br>
-      <h3 style="text-align:center">USERID :   AI101 </h3>
-<br>
-      <h3 style="text-align:center">BATCH NUMBER :    E#3</h3>
-      <br>
-      <h3 style="text-align:center">NAME :    MANISH MALHOTRA</h3>
-      <br>
-      <h3 style="text-align:center">NATIONALITY : INDIAN</h3>
-      
-      <br>
-      <h3 style="text-align:center">E-MAIL :   manishm@gmail.com</h3>
-      
-     <br>
-     <h3 style="text-align:center">CONTACT NUMBER :  9875643221</h3>
-      <br>
-      <div class="container"> 
-        <input type="Go Back" class="btn btn-info" value="Go Back">
-    </div>
-    </div>
+      <form>
+        <fieldset>
+          <legend><u><b>USER DETAILS</u></b></legend>
+        <p>
+            
+            
+                   USER ID :  <input class="inputClass"
+                   name="input" value=" AI101"> 
+                   
+                   <br><br>
+                   NAME :  <input class="inputClass"
+                   name="input" value=" MANISH MALHOTRA">  
+                   <br><br>
+                   BATCH NO. :  <input class="inputClass"
+                   name="input" value=" AI#E"> 
+                  
+                   <br><br>
+                   NATIONALITY :  <input class="inputClass"
+                   name="input" value=" INDIAN"> 
+                   <br><br>
+                   E-MAIL :  <input class="inputClass"
+                   name="input" value=" manishm@gmail.com">
+                   <br><br>
+                   CONTACT NUMBER :  <input class="inputClass"
+                   name="input" value=  9875643221> 
+
+
+                 
+               <br><br> 
+          </p>
+      </div>
   </body>
 </html>
