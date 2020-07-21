@@ -1,9 +1,13 @@
-<head><link rel="stylesheet" href="Path">
-    <link rel="stylesheet" href="bootstrap1.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script></head>
+<html>
 
+  <head>
+    <title>User_details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
     
+
+  <body>
+
     <style>
       .img-container {
         text-align: center;
@@ -12,19 +16,18 @@
             pointer-events: none;  
         } 
     </style>
-  </head>
-  <body>
+  
     <div class="img-container"> <!-- Block parent element -->
-      <img src="blankprofile.png" alt="MANISH MALHOTRA">
+      <img src="images/blank_user.png" alt="MANISH MALHOTRA" height="250px" width="250px" >
       <figcaption>Manager</figcaption>
       <br>
       <form>
         <fieldset>
-          <legend><u><b>USER DETAILS</u></b></legend>
+          <legend><u><h1>USER DETAILS</u></h1></legend>
         <p>
             
             
-                   USER ID :  <input class="inputClass"
+                   USER ID :  <input type="text" class="inputClass"
                    name="input" value=" AI101"> 
                    
                    <br><br>
@@ -32,22 +35,26 @@
                    name="input" value=" MANISH MALHOTRA">  
                    <br><br>
                    BATCH NO. :  <input class="inputClass"
-                   name="input" value=" AI#E"> 
+                   name="input" value=" AAI#E2020"> 
                   
                    <br><br>
                    NATIONALITY :  <input class="inputClass"
                    name="input" value=" INDIAN"> 
                    <br><br>
                    E-MAIL :  <input class="inputClass"
-                   name="input" value=" manishm@gmail.com">
+                   name="input" value=" manishm@aai.org">
                    <br><br>
                    CONTACT NUMBER :  <input class="inputClass"
                    name="input" value=  9875643221> 
 
-
-                 
-               <br><br> 
           </p>
       </div>
+      <hr>
+              
+      <input type="button" class="btn btn-success" value="Go Back" onclick="history.back(-1)" />
+
+      <br>
+      <br>
+      <br>
   </body>
 </html>
