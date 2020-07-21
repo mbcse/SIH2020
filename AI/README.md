@@ -2,9 +2,9 @@
 # Pre-requisite libraries
 -------> Setting up for Textract Service
 1) Installing the AWS CLI
-	i) Download the AWS CLI MSI installer for Windows (64-bit) present in the Installers folder. \n
-	ii) Run the downloaded MSI installer and follow the on-screen instructions. By default, the AWS CLI installs to C:\Program Files\Amazon\AWSCLIV2 \n
-	iii) To confirm the installation, open the Start menu, search for cmd to open a command prompt window, and at the command prompt use the aws --version command. \n
+	i) Download the AWS CLI MSI installer for Windows (64-bit) present in the Installers folder. /n
+	ii) Run the downloaded MSI installer and follow the on-screen instructions. By default, the AWS CLI installs to C:\Program Files\Amazon\AWSCLIV2 /n
+	iii) To confirm the installation, open the Start menu, search for cmd to open a command prompt window, and at the command prompt use the aws --version command. /n
 
 2) Configuring the AWS CLI
 	i) In the command line type- $aws configure \n
