@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/report_details.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AAI Portal</title>
     <link
@@ -101,9 +102,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="status_details.html" class="nav-link px-2">
+              <a href="report_details.html" class="nav-link px-2">
                 <i class="material-icons icon"> insert_chart </i
-                ><span class="text">Status</span></a>
+                ><span class="text">Report
+                </span></a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link px-2">
@@ -127,68 +129,16 @@
       </div>
       <div class="content">
         <main>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 my-3">
-                <div class="bg-light px-3 py-3">
-                  <h4 class="mb-2">Clients</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-warning text-mattBlackDark"
-                      role="progressbar"
-                      style="width: 25%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      25
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
-                <div class="bg-light px-3 py-3">
-                  <h4 class="mb-2">Projects</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-info text-mattBlackDark"
-                      role="progressbar"
-                      style="width: 50%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      50
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 my-3">
-                <div class="bg-light p-3">
-                  <h4 class="mb-2">Tasks Completed</h4>
-                  <div class="progress" style="height: 16px;">
-                    <div
-                      class="progress-bar bg-success"
-                      role="progressbar"
-                      style="width: 80%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      80
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <br><br>
             <div class="row">
               <div class="col-md-6">
                 <div class="my-2 p-3">
-                  <img src="images/aai_logo.png" height=80% width=80%> 
+                  <img src="images/aai_logo.png" height=60% width=60%> 
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="bg-light my-2 p-3">
+                  <br>
                   The Airports Authority of India or AAI is a statutory body (created through the Airports Authority of India Act, 1994) working under the Ministry of Civil Aviation, Government of India is responsible for creating, upgrading, maintaining and managing civil aviation infrastructure in India.
                   <br>
                   <hr>
@@ -196,10 +146,128 @@
                 </div>
               </div>
             </div>
+            <hr>
+            <div class="content">
+              <div class="col-md-6">
+                <div class="bg-light report_table" >
+                
+                    <h1 class="tcent">Application Status and Details</h1></h1>
+                    <br><br>
+
+                    <table id="table1" class="tcent">
+                      <tr>
+                        <th class="tcent"><b>ID</b></th>
+                        <th class="tcent"><b>Home Minister Approval</b></th>
+                        <th class="tcent"><b>Defense Approval</b></th>
+                        <th class="tcent"><b>Aerodrome Manual</b></th>
+                        <th class="tcent"><b>A.I. Approval</b></th>
+                        <th class="tcent"><b>D.O.A.S. Approval</b></th>
+                        <th class="tcent"><b>D.G. Approval</b></th>
+                        <th class="tcent"><b>License Number Allotted</b></th>
+                      </tr>
+                      <tr>
+                        <td class="tcent">1.</td>
+                        
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">N/A</td>
+                            
+                      </tr>
+                      
+                      <tr>
+                        <td class="tcent">2.</td>
+                        <td class="tcent">    
+                          <button class="button button2">View</button></td>
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">
+                          <form>
+                            <input type="file" id="" name="filename">
+                            <input type="submit" class="btn btn-success">
+                          </form>
+                        </td>
+
+                        <td class="tcent">N/A</td>
+                      </tr>
+                    </table>
+                  
+                    </div>
+                   
+                </div>
+              </div>
+
+
           </div>
         </main>
       </div>
     </div>
+   
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
