@@ -17,11 +17,18 @@
 3) $pip install boto3
 
 
-### Other libraries <br />
+### Setting up for pdf2image library(pdf2print). It is used to convert pdf file to images. <br />
 
-4) Extract the poppler folder present in the installer folder onto your local system.<br />
-5) Add the bin\ folder in your path . https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/ <br />
-6) $pip install pdf2print <br />
-7) $pip install shutil <br />
-8) $pip install json <br />
-9) $pip install webbrowser <br />
+1) Extract the poppler folder present in the installer folder onto your local system.<br />
+2) Add the bin\ folder in your path . https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/ <br />
+3) $pip install pdf2print </br>
+
+### Other Libararies 
+* $pip install shutil <br />
+* $pip install json <br />
+* $pip install webbrowser <br />
+
+
+**Note: All the packages can be installed by running $ pip install -r requirement.txt**
+*Textract services won't work if aws cli is not configured properly*
+*pdf2print library won't work if poppler's bin\ folder is not added in the path*
