@@ -1,5 +1,6 @@
 # SIH2020
 # Pre-requisite libraries
+-------> Setting up for Textract Service
 1) Installing the AWS CLI
 	i) Download the AWS CLI MSI installer for Windows (64-bit) present in the Installers folder.	
 	ii) Run the downloaded MSI installer and follow the on-screen instructions. By default, the AWS CLI installs to C:\Program Files\Amazon\AWSCLIV2
@@ -13,4 +14,7 @@
 	    Default output format [None]: json
 
 3) $pip install boto3
-4) 
+
+
+-------> Other libraries
+4) $pip install 
