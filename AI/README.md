@@ -43,10 +43,10 @@ Other libraries include: <br />
     1. json output on the console <br />
     2. A folder with the name of the file in ../SIH2020/AI/file_name
     3. A "file_name.csv" inside the folder, and
-    4. A "file_name.json" inside the folder
+    4. A "file_name.json" inside the folder <br />
     *e.g A folder in the ..SIH2020/AI directory i.e ..SIH2020/AI/Aerodrome_and_Site_Clearance_Form. In this folder it will have* <br />
-    	..* Aerodrome_and_Site_Clearance_Form.json, and <br />
-	..* Aerodrome_and_Site_Clearance_Form.csv files <br />
+    	* Aerodrome_and_Site_Clearance_Form.json, and <br />
+	* Aerodrome_and_Site_Clearance_Form.csv files <br />
 
 
 **Note:**
