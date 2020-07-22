@@ -21,11 +21,11 @@
 
 1) Extract the poppler folder present in the installer folder onto your local system.<br />
 2) Add the bin\ folder in your path . https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/ <br />
-3) $pip install pdf2print </br>
+3) $pip install pdf2image </br>
 
 ### Other Libararies 
 * $pip install shutil <br />
-* $pip install json <br />
+* $pip install jsonlib <br />
 * $pip install webbrowser <br />
 
 
