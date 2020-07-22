@@ -17,7 +17,7 @@
 3) $pip install boto3
 
 
-### Setting up for pdf2image library(pdf2print). It is used to convert pdf file to images. <br />
+### Setting up for pdf2image library. It is used to convert pdf file to images. <br />
 
 1) Extract the poppler folder present in the installer folder onto your local system.<br />
 2) Add the bin\ folder in your path . https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/ <br />
