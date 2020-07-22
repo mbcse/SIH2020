@@ -35,6 +35,20 @@ Other libraries include: <br />
 * csv <br />
 * shutil <br />
 
+## Execution
+1) Ensure you are in the ../SIH2020/AI directory <br />
+2) On the command line run $ python file_to_json.py <path of the pdf/jpg/png file> <br />
+   *e.g $python file_to_json.py Forms/Aerodrome_and_Site_Clearance_Form.pdf <br />
+3) It will return the following: <br />
+    1. json output on the console <br />
+    2. A folder with the name of the file in ../SIH2020/AI/file_name
+    3. A "file_name.csv" inside the folder, and
+    4. A "file_name.json" inside the folder
+    *e.g A folder in the ..SIH2020/AI directory i.e ..SIH2020/AI/Aerodrome_and_Site_Clearance_Form. In this folder it will have* <br />
+    	..* Aerodrome_and_Site_Clearance_Form.json, and <br />
+	..* Aerodrome_and_Site_Clearance_Form.csv files <br />
+
+
 **Note:**
 * *Textract services won't work if aws cli is not configured properly* <br />
 * *pdf2print library won't work if poppler's bin\ folder is not added in the path* <br />
