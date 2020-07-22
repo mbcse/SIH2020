@@ -15,7 +15,7 @@ def extract_jpg(file_name,csv_output_file):
     with open(csv_output_file, "w") as fout:
         fout.write(table_csv)
     
-    print('CSV OUTPUT FILE: ',csv_output_file)
+    #print('CSV OUTPUT FILE: ',csv_output_file)
     
 def extract_pdf(file_name,csv_output_file):    
     from pdf2image import convert_from_path
@@ -29,7 +29,7 @@ def extract_pdf(file_name,csv_output_file):
     with open(csv_output_file, "w") as fout:
         fout.write(table_csv)
         
-    print('CSV OUTPUT FILE: ',csv_output_file)
+    #print('CSV OUTPUT FILE: ',csv_output_file)
     
     
 def get_rows_columns_map(table_result, blocks_map):
