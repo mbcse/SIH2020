@@ -24,11 +24,18 @@
 3) $pip install pdf2image </br>
 
 ### Other Libararies 
-* $pip install shutil <br />
-* $pip install jsonlib <br />
-* $pip install webbrowser <br />
+Run pip install -r requirement.txt to all the other libraries.<br />
+Other libraries include: <br />
 
+* webbrowser <br />
+* jsonlib <br />
+* io <br />
+* sys <br />
+* pprint <br />
+* os <br />
+* csv <br />
+* shutil <br />
 
-**Note: All the packages can be installed by running $ pip install -r requirement.txt** <br />
-**Textract services won't work if aws cli is not configured properly* <br />
-**pdf2print library won't work if poppler's bin\ folder is not added in the path* <br />
+**Note:**
+* *Textract services won't work if aws cli is not configured properly* <br />
+* *pdf2print library won't work if poppler's bin\ folder is not added in the path* <br />
