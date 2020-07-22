@@ -30,5 +30,5 @@
 
 
 **Note: All the packages can be installed by running $ pip install -r requirement.txt** <br />
-*Textract services won't work if aws cli is not configured properly* <br />
-*pdf2print library won't work if poppler's bin\ folder is not added in the path* <br />
+**Textract services won't work if aws cli is not configured properly* <br />
+**pdf2print library won't work if poppler's bin\ folder is not added in the path* <br />
