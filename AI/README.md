@@ -23,7 +23,7 @@
 
 
 ### Other Libararies 
-####Run pip install -r requirement.txt to install all the other libraries .<br /> 
+**Run pip install -r requirement.txt to install all the other libraries** .<br /> 
 Other libraries include: <br />
 
 * webbrowser <br />
