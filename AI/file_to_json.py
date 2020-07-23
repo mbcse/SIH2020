@@ -70,7 +70,7 @@ def get_table_csv_results(file_name):
     with open(file_name, 'rb') as file:
         img_test = file.read()
         bytes_test = bytearray(img_test)
-        print('Image loaded', file_name)
+        #print('Image loaded', file_name)
 
     # process using image bytes
     # get the results
@@ -80,7 +80,7 @@ def get_table_csv_results(file_name):
 
     # Get the text blocks
     blocks=response['Blocks']
-    pprint(blocks)
+    #pprint(blocks)
 
     blocks_map = {}
     table_blocks = []
