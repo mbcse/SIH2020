@@ -29,4 +29,4 @@ More will be added soon
 ## Work Assigned
 - Mohit Bhat and Avinash Kumar=>Blockchain and Backend
 - Aditiya Singh and K.Manohar=>AI 
-- Chahat Bindra and Vineeth=>Frontend
+- Chahat Bindra and M.Vineeth=>Frontend
