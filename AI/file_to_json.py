@@ -143,8 +143,8 @@ def csv_json(csv_output_file,json_output_file):
             master_list.append(temp)
             
     master_dict = {}
-    for i in master_list:
-        master_dict[i[0]] = i[1:]
+    for i in range(len(master_list)):    
+        master_dict[master_list[i][0]] = master_list[i][1]
         
     json_object = json.dumps(master_dict, indent = 4)    
     with open(json_output_file,'w') as outfile:
