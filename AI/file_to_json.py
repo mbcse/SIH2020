@@ -147,7 +147,7 @@ def csv_json(csv_output_file,json_output_file):
         value = ""
         for j in master_list[i][1:]:
             value+= "," + j
-        try_dict[master_list[i][0]] = value
+        master_dict[master_list[i][0]] = value
         
     json_object = json.dumps(master_dict, indent = 4)    
     with open(json_output_file,'w') as outfile:
