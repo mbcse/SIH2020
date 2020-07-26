@@ -130,8 +130,8 @@ def csv_json(csv_output_file,json_output_file):
             rows.append(row) 
             
     #removing empty lines
-    master_list = []
-    master_list = []
+    temp_list = []
+    
     for i in range(len(rows)):  
         #print("rows:",rows[i])
         if(len(rows[i])>=2):
@@ -140,7 +140,13 @@ def csv_json(csv_output_file,json_output_file):
                 if(len(rows[i][j])>1):
                     temp.append(rows[i][j].strip())
             #print("temp:",temp)
-            master_list.append(temp)
+            temp_list.append(temp)
+    
+    master_list = []
+    for i in range(len(temp_list)):
+        if len(temp_list[i])>=2:
+            master_list.append(temp_list[i])
+
             
     master_dict = {}
     for i in range(len(master_list)):    
