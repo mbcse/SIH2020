@@ -155,12 +155,13 @@ def csv_json(csv_output_file,json_output_file):
             value+= "," + j
         master_dict[master_list[i][0]] = value
         
-    json_object = json.dumps(master_dict, indent = 4)    
+    json_object = json.dumps(master_dict, indent = 4)
+    json_final = json.loads(json_object)    
     with open(json_output_file,'w') as outfile:
-        json.dump(json_object, outfile)
+        json.dump(json_final, outfile)
         
     #print(json_object)    
-    return json_object
+    return json_final
 
 
 def core_file_name(file_path):
