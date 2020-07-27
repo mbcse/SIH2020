@@ -148,12 +148,17 @@ def csv_json(csv_output_file,json_output_file):
             master_list.append(temp_list[i])
 
             
+        
     master_dict = {}
-    for i in range(len(master_list)):    
-        value = ""
-        for j in master_list[i][1:]:
-            value+= "," + j
-        master_dict[master_list[i][0]] = value
+    for i in range(len(master_list)):  
+
+        value = master_list[i][1]
+        try:
+            for j in master_list[i][2:]:
+                value+= "," + j
+            master_dict[master_list[i][0]] = value
+        except:
+            master_dict[master_list[i][0]] = value
         
     json_object = json.dumps(master_dict, indent = 4)
     json_final = json.loads(json_object)    
@@ -191,7 +196,7 @@ def core_file_name(file_path):
     return final_name
 
 def main(file_name):
-    print(file_name)
+    #print(file_name)
     output_file_name = core_file_name(file_name)
     #print(output_file_name)
     
