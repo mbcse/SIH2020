@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Central Monitoring System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body class="w3-sand">
+        <br>
+        <h1 style="text-align: center;">Central Monitoring System</h1>
+        <br><hr><br>
+        
+        <div class="container cms_table">
+            <style>
+                .cms_table {
+                    overflow-x : auto;
+                    width : 100%;
+                    height : 60%;
+                }
+            </style>
+
+            <table class="table table-bordered table-hover w3-pale-yellow">
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Date</th>
+                        <th>Signatory</th>
+                        <th>Transaction Hash</th>
+                        <th>Ethereum Address</th>
+                        <th>Action done</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- Sample data added. -->
+                    <tr>
+                        <td id="id">E18CSE095</td>
+                        <td id="date">28-07-20</td>
+                        <td id="signatory">A.I.</td>
+                        <td id="hash">4343434343434343</td>
+                        <td id="eth_address">34343rerererer3r3</td>
+                        <td id="action_done">Approved</td>
+                    </tr>
+
+                    <tr>
+                        <td id="id">E18CSE096</td>
+                        <td id="date">28-07-20</td>
+                        <td id="signatory">A.I.</td>
+                        <td id="hash">4343434343434343</td>
+                        <td id="eth_address">34343rerererer3r3</td>
+                        <td id="action_done">Approved</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <br><hr><br>
+        <input type="button" class="btn btn-success" value="Go Back" onclick="history.back(-1)" />
+    </body>
+</html>
