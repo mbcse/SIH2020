@@ -1,5 +1,5 @@
 # SIH2020  Blockchain Based ERP/KMP(Airport Authority Of India Project)
- # **NOTE THIS IS A DEPLOYMENT REPOSITORY OF SIH PROJECT, TO SEE MORE DETAILS ABOUT PROJECT PLEASE VISIT LINK https://github.com/mbcse/SIH2020KMP_Hexa-Techies**
+NOTE :  THIS IS A DEPLOYMENT REPOSITORY OF SIH PROJECT, TO SEE MORE DETAILS ABOUT PROJECT PLEASE VISIT LINK https://github.com/mbcse/SIH2020KMP_Hexa-Techies
 
 ## Problem Statement
 A web Based application using **Blockchain** technology is sought from **Airport Licensing** to retrive 
